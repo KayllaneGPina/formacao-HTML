@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Projeto</title>
+</head>
+<body>
+    <h1 id="topo">Anatomia do HTML</h1>
+
+    <table>
+        <tr>
+            <th>Menu</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="#introducao">Introdução</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#estrutura">Estrutura Básica</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#tags">Tags e seus Atributos</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#textos">Textos</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#listas">Listas</a>
+            </td>
+        </tr> <tr>
+            <td>
+                <a href="#links">Links</a>
+            </td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <h2 id="introducao">Introdução</h2>
+    <p>O HTML foi criado em 1991, por Tim Berners-Lee, no CERN (European Council for Nuclear Research) na suíça. Inicialmente o HTML foi projetado para interligar instituições de pesquisa próximas, e compartilhar documentos com facilidade. Em 1992, foi liberada a biblioteca de desenvolvimento <abbr title="World Wide Web">WWW</abbr>, uma rede de alcance mundial, que junto com o HTML proporcionou o uso em escala mundial da WEB. <br/> O HTML é uma <strong>linguagem de marcação.</strong> Estas linguagens são constituídas de códigos que delimitam conteúdos específicos, segundo uma sintaxe própria. O HTML tem códigos para criar paginas na web. Estes códigos que definem o tipo de letra, qual o tamanho, cor, espaçamento, e vários outros aspectos do site.</p>
+
+    <hr />
+
+    <h2 id="estrutura">Estrutura Básica</h2>
+
+    <p>O HTML é estruturado da seguinte maneira:</p>
+
+    <ol>
+        <li> &lt;!DOCTYPE html&gt;</li>
+        <li> &lt;html&gt;&lt;/html&gt;</li>
+        <li>&lt;head&gt; &lt;/head&gt;</li>
+        <li>&lt;body&gt;&lt;/body&gt;</li>
+    </ol> 
+   
+    <p><strong>1</strong> - <mark> É a parte inicial obrigatória do documento.</mark> Nas névoas do tempo, quando o HTML era novo (por volta de 1991/2), doctypes eram criados para agir como links para um conjunto de regras que a página HTML tinha que seguir para ser considerada um bom HTML, o que poderia significar checagem automática de erros e outras coisas úteis. <u>No entanto, atualmente, eles não fazem muito sentido e são basicamente necessários apenas para garantir que o documento se comporte corretamente. Isso é tudo que você precisa saber agora.</u> </p>
+
+    <p><strong>2</strong> - Esse elemento envolve <mark>todo o conteúdo da página e às vezes é conhecido como o elemento raiz.</mark></p>
+
+    <p><strong>3</strong> - Esse elemento age como um recipiente de tudo o que você deseja incluir em uma página HTML que não é o conteúdo que você quer mostrar para quem vê sua página. Isso inclui coisas como <mark>palavras-chave e uma descrição que você quer que apareça nos resultados de busca, CSS para dar estilo ao conteúdo, título da página,declarações de conjuntos de caracteres e etc.</mark></p>
+
+    <p><strong>4</strong> - <mark>Contém todo o conteúdo que você quer mostrar ao público que visita sua página</mark>, seja texto, imagens, vídeos, jogos, faixas de áudio reproduzíveis ou qualquer outra coisa.</p>
+
+    <hr />
+
+    <h2 id="tags">Tags e seus Atributos</h2>
+    <p>As tags HTML são elementos usados ​​para marcar e formatar os conteúdos: textual ou visual em documentos HTML. Cada tag HTML tem um nome e uma sintaxe que determina como ela deve ser aberta e fechada. Por exemplo: a tag de parágrafo é escrita como &lt;p&gt; e &lt;/p&gt;. Já para negritar pode ser usada a tag &lt;Strong&gt; ou &lt;b&gt; no início e &lt;/Strong&gt; ou &lt;/b&gt; para finalizar.Para finalizar a utilização de uma tag pode ser usada uma barra (/), sendo que no caso das tags de autofechamento, não há necessidade da presença desse caractere.</p>
+
+    <h4>Principais tipos de Tag</h4>
+    <p><i>Tags semânticas</i> <br/> São tags que possuem um significado, ou seja, elas irão dar sentido a uma informação de texto ao navegador e buscador. As mais comuns são:&lt;article&gt;, &lt;header&gt;, &lt;nav&gt; e outras.</p> 
+    
+    <br/>
+
+    <p><i>Tags sem semântica</i> <br/> São tags que não possuem significado. Como assim? Elas servem apenas para utilização de separação e estilização. As mais usadas são: &lt;b&gt;, &lt;i&gt;, &lt;span&gt; e outras.</p>
+
+    <h4>Atributos</h4>
+    <p><u>Atributos HTML são palavras especiais usadas dentro da tag de abertura para controlar o comportamento do elemento.</u> Os atributos HTML são um modificador de um tipo de elemento HTML. Com eles podemos identificar melhor um elemento, informar qual arquivo aquela tag deve utilizar, indicar o tipo de um campo de texto, etc… <br/>
+    Há dois tipos de atributos no HTML, os globais que são aceitos por todas as tags, como por exemplo: <mark>class</mark>, <mark>id</mark>, <mark>lang</mark>, <mark>style</mark> e algumas outras que você pode conferir na documentação também existem os específicos que somente algumas tags possuem, como <mark>src</mark>, <mark>disabled</mark>, <mark>href</mark>, <mark>label</mark>, etc…</p>
+
+    <hr />
+
+    <h2 id="textos">Textos</h2>
+    <p>Um dos principais objetivos do HTML é dar estrutura de texto e significado, também conhecido como <strong>semântica</strong>, para que um navegador possa exibi-lo corretamente.</p>
+
+    <h4>Cabeçalho e Parágrafos</h4>
+    <p><strong>Cabeçalho:</strong> Cada título deve ser envolvido em um elemento de título: &lt;h1&gt;Título de uma página&lt;/h1&gt; <br/> Existem seis elementos de título — &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; e &lt;h6&gt;. Cada elemento representa um nível diferente de conteúdo no documento; &lt;h1&gt; representa o título principal, &lt;h2&gt; representa subtítulos, &lt;h3&gt; representa sub-subtítulos, e assim por diante.</p> 
+
+    <br/>
+
+    <p><strong>Parágrafo:</strong> Em HTML, cada parágrafo deve ser envolvido em um <small>elemento</small> &lt;p&gt;, assim: &lt;p&gt;Parágrafos....&lt;/p&gt;</p>
+    <hr/>
+
+    <h2 id="listas">Listas</h2>
+    <p>Listas podem ser categorizadas como ordenadas e não ordenadas</p>
+
+    <h4>Não Ordenadas</h4>
+    <p>As listas não ordenadas são usadas para marcar listas de itens para os quais a ordem dos itens não importa. São escritas dessa maneira: <br/>
+        Toda lista desordenada começa com um &lt;ul&gt; — isso envolve todos os itens da lista: <br/>
+        &lt;ul&gt; <br/>
+        leite <br/>
+        ovos <br/>
+        pão <br/>
+        &lt;/ul&gt; <br/>
+
+        <br/>
+
+        O último passo é envolver cada item da lista em um elemento &lt;li&gt;(elemento da lista): <br/>
+        &lt;ul&gt; <br/>
+        &lt;li&gt;leite&lt;/li&gt; <br/>
+        &lt;li&gt;ovos&lt;/li&gt; <br/>
+        &lt;li&gt;pão&lt;/li&gt; <br/>
+        &lt;/ul&gt;
+    </p>
+
+    <br/>
+
+    <h4>Ordenadas</h4>
+    <p>As listas ordenadas são listas em que a ordem dos itens é importante. A estrutura de marcação é a mesma das listas não ordenadas, exceto que você deve conter os itens da lista em um elemento &lt;ol&gt;, em vez de &lt;ul&gt;: <br/>
+        &lt;ol&gt; <br/>
+        &lt;li&gt;leite&lt;/li&gt; <br/>
+        &lt;li&gt;ovos&lt;/li&gt; <br/>
+        &lt;li&gt;pão&lt;/li&gt; <br/>
+        &lt;/ol&gt;
+    </p>
+
+    <hr/>
+
+    <h2 id="links">Links</h2>
+    <p>Um link básico é criado envolvendo o texto que você quer transformar em um link dentro de um elemento &lt;a&gt;, e dando-lhe um atributo <mark>href</mark>, (também conhecido como Hypertext Reference, ou target) que conterá o endereço da Web para o qual você deseja que o link aponte. É assim que se criar um link no HTML: <br/>
+       <mark>&lt;a href="#"&gt;Criando um link no HTML&lt;a&gt;</mark> 
+    </p>
+    <hr/>
+
+    <h5>Curiosidade</h5>
+    <p>A tag &lt;font&&gt; não é mais suportada no HTML5. Ela era usada no <del>HTML4</del> para especificar as fonte (<sup>size, color, etc</sup>) de um texto.</p>
+   
+    <hr/>
+
+    <table>
+        <tr>
+            <th>
+                <h3>Referências</h3>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.infoescola.com/informatica/html/" target="_blank">
+                    <i>História do HTML</i>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">
+                    <i>Estrutura Básica do HTML</i>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica" target="_blank">
+                    <i>Tags HTML</i>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" target="_blank">
+                    <i>Textos</i>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#listas" target="_blank">
+                    <i>Listas</i>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" target="_blank">
+                    <i>Links HTML</i>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                    <i>Mais conteúdos de HTML para estudo</i>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <h6>Por hoje é isso. Até breve!</h6>
+    <blockquote>Acerte em tudo que puder acertar. Mas não se torture com seus erros. Paulo Coelho (Manuscrito Encontrado em Accra, 2012)</blockquote>
+    <a href="#topo">Voltar ao topo</a>
+</body>
+</html>
