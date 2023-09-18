@@ -2,4 +2,4 @@
 
 - [x] Primeiros Passos com HTML
 - [x] HTML I: Conceitos Básicos
-- [] HTML II: Ampliando o Conhecimento
+- [x] HTML II: Ampliando o Conhecimento
